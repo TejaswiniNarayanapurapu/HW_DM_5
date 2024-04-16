@@ -153,21 +153,21 @@ def question7():
     answers['(i) Best classifier?'] = 'C2'
 
     # type: explain_string
-    answers['(i) Best classifier, explain'] = None
+    answers['(i) Best classifier, explain'] = 'C2 is considered better due to its higher F1-measure and Recall, indicating a more balanced performance between precision and the ability to identify true positives.'
 
     # type: string
     # choices: ['TPR-FPR', 'precision-recall-F1-Measure']
-    answers['(ii) appropriate metric pair'] = None
+    answers['(ii) appropriate metric pair'] = 'precision-recall-F1-Measure'
 
     # type: explain_string
-    answers['(ii) appropriate metric pair, explain'] = None
+    answers['(ii) appropriate metric pair, explain'] = 'This metric trio is most appropriate as it provides a comprehensive evaluation of both the accuracy and balance of positive predictions, which is critical in settings with imbalanced classes.'
 
     # type: string
     # choices: ['C1', 'C2', 'C3']
-    answers['(iii) preferred classifier?'] = None
+    answers['(iii) preferred classifier?'] = 'C2'
 
     # type: explain_string
-    answers['(iii) best classifier, explain'] = None
+    answers['(iii) best classifier, explain'] = 'C2 is preferred over C1 and C3 as it achieves a balance between identifying positive cases and minimizing false positives, as evidenced by its 50% Recall and F1-measure.'
     return answers
 
 
@@ -179,10 +179,10 @@ def question8():
     answers['(a) precision for C0'] = 0.1
 
     # type: eval_float
-    answers['(a) recall for C0'] = None
+    answers['(a) recall for C0'] = 'P'
 
     # type: eval_float
-    answers['(b) F-measure of C0'] = None
+    answers['(b) F-measure of C0'] = '(0.2 * p) / (0.1 + p)'
 
     # type: string
     # choices: ['yes', 'no', 'unknown']
