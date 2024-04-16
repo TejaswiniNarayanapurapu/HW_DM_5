@@ -116,24 +116,24 @@ def question6():
     answers = {}
 
     # type: eval_float
-    answers['(a) C1-TPR'] = 0.1
+    answers['(a) C1-TPR'] = 'P'
 
     # type: eval_float
-    answers['(a) C2-TPR'] = 0.1
+    answers['(a) C2-TPR'] = '2*P'
 
     # type: eval_float
-    answers['(a) C1-FPR'] = 0.2
+    answers['(a) C1-FPR'] = 'P'
 
     # type: eval_float
-    answers['(a) C2-FPR'] = 0.2
+    answers['(a) C2-FPR'] = '2*P'
 
     # type: string
     # Hint: The random guess line in an ROC curve corresponds to TPR=FPR.
     # choices: ['yes', 'no']
-    answers['(b) C2 better classifier than C1?'] = 'no'
+    answers['(b) C2 better classifier than C1?'] = 'yes'
 
     # type: explain_string
-    answers['(b) C2 better classifier than C1? Explain'] = 'C2 is not better than C1 because both classifiers have a TPR equal to their FPR, indicating that they perform as random guessing. In an ROC curve, this corresponds to the diagonal line where TPR=FPR, showing no discrimination ability'
+    answers['(b) C2 better classifier than C1? Explain'] = "Both classifiers essentially function as random guessers, with their True Positive Rates (TPR) matching their False Positive Rates (FPR). Enhancing the likelihood of predicting the + class doesn't improve C2s effectiveness because it raises both the TPR and FPR proportionately, keeping its performance on par with mere random guessing."
 
     # type: string
     # choices: ['TPR/FPR', 'precision/recall']
